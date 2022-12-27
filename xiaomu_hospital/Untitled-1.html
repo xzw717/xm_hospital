@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+       
+        /* h1{
+            color: bisque;
+        } */
+        /* #testh1 {
+            color: green;
+        }
+
+        #testh2 {
+            color: blue;
+        } */
+
+        /* ul {
+            list-style: none;
+        }
+
+        li {
+            color: red;
+            background-color: blanchedalmond;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        span {
+            font-size: 50px;
+            color: darkgoldenrod;
+        } */
+
+        .h1test {
+            color: coral;
+        }
+
+        .sss {
+            font-style: italic;
+        }
+
+        .h2test {
+            color: darkorchid;
+        }
+
+        .fs18 {
+            font-size: 18px;
+        }
+
+        .fs20 {
+            font-size: 20px;
+        }
+
+        .fs22 {
+            font-size: 22px;
+        }
+
+        .fs24 {
+            font-size: 24px;
+        }
+
+        .fs26 {
+            font-size: 26px;
+        }
+
+        .fs28 {
+            font-size: 28px;
+        }
+
+        .fs30 {
+            font-size: 30px;
+        }
+
+        .fs32 {
+            font-size: 32px;
+        }
+
+        .fs34 {
+            font-size: 34px;
+        }
+
+        .color-red {
+            color: red;
+        }
+
+        .color-green {
+            color: green;
+        }
+
+        .color-blue {
+            color: blue;
+        }
+
+        .box span {
+            color: aquamarine;
+            font-style: italic;
+        }
+
+        .box div p {
+            color: chartreuse;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        li.spec {
+            color: hotpink;
+        }
+
+        a:link.changecolor {
+            color: dodgerblue;
+        }
+
+        a.changecolor:visited {
+            color: darkgoldenrod;
+        }
+
+        a.changecolor:hover {
+            background-color: gold;
+        }
+
+        a:active.changecolor {
+            font-size: 30px;
+        }
+
+        .box12>p {
+            color: crimson;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        img+span {
+            color: green;
+        }
+
+        h4~span {
+            font-style: italic;
+        }
+
+        div {
+            border: 1px solid #000;
+        }
+
+        .box15 p:first-child {
+            color: red;
+        }
+
+        .box15 p:last-child {
+            color: blue;
+        }
+
+        .box16 p:nth-child(even) {
+            color: cornflowerblue;
+        }
+
+        .box17 p:nth-of-type(3) {
+            color: rgb(191, 2, 90);
+        }
+
+        .box17 h3:nth-of-type(2) {
+            color: rgb(1, 181, 4);
+        }
+
+        .box18 p:nth-last-child(3) {
+            color: rgb(214, 165, 3);
+        }
+
+        .box18 p:nth-last-of-type(3) {
+            color: rgb(229, 127, 155);
+        }
+
+        a::before {
+            content: "❤";
+        }
+
+        a::after {
+            content: "🟥";
+        }
+
+        .box19::selection {
+            color: bisque;
+            background-color: blueviolet;
+        }
+
+        .box19::first-letter {
+            font-size: 50px;
+        }
+
+        .box19::first-line {
+            text-decoration: underline;
+        }
+
+        .box20 p {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(150, 8, 8);
+        }
+
+        .box20 p:empty {
+            background-color: aqua;
+        }
+
+        input:focus {
+            background-color: goldenrod;
+            color: aquamarine;
+        }
+
+        input:disabled {
+            border: 1px solid rgb(161, 3, 124);
+        }
+
+        input:enabled {
+            border: 1px solid #000;
+        }
+
+        input:checked+span {
+            color: brown;
+        }
+
+        :root {
+            font-size: 20px;
+        }
+        @font-face {
+            font-family: "站酷高端黑 Regular";
+            font-weight: 400;
+            src: url("fonts/wDG89LXzwG_JP62XKuUy4.woff2") format("woff2"),
+                url("fonts/wDG89LXzwG_JP62XKuUy4.woff ") format("woff");
+            font-display: swap;
+        }
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            /* font-family: "Times New Roman", serif,"Microsoft Yahei"; */
+            font-family: 'SimSun';
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <h1 id="testh1" class="h1test">wwwsssoo1234表格练习</h1>
+    <h2 id="testh2">标签2练习</h2>
+    <table border="1" width="600">
+        <caption>我是表格标题哦</caption>
+        <tr>
+            <th>第一季度</th>
+            <th>第二季度</th>
+            <th>第三季度</th>
+            <th>第四季度</th>
+        </tr>
+        <!-- <tr>
+
+            <td>这是另一行</td>
+        </tr> -->
+
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <!-- <td>E</td>
+            <td>F</td> -->
+        </tr>
+    </table>
+    <div class="box">
+        <ul>
+            <li>321</li>
+            <li>654</li>
+            <li><span>987</span>
+                <div>
+                    <p>层层包围</p>
+                </div>
+            </li>
+            <li><span>123</span>
+                <p>外面的p标签</p>
+            </li>
+            <li>
+                <ol>
+                    <li class="spec">连花清瘟</li>
+                    <li>布洛芬</li>
+                    <li>扑热息痛</li>
+                    <li>三九感冒灵</li>
+                    <li>新康泰克</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <a href="" class="h1test sss">我是一个网址</a>
+    <a href="">我是第二个网址</a>
+    <a href="" class="h2test sss">我是第三个网址</a>
+    <a href="" class="h2test">我是第四个网址</a>
+    <p>窗外的麻雀，在电线杆上<span class="fs22 color-red">多嘴</span></p>
+    <p><span class="fs18 color-green">你说</span>这一句很有夏天的感觉</p>
+    <p>手中的<span class="fs30 color-blue">铅笔✏️</span>在纸上来来回回</p>
+
+    <div>
+        <a class="changecolor" href="http://www.taobao.com">前往淘宝网</a>
+        <a class="changecolor" href="http://www.baidu.com">前往百度</a>
+        <a class="changecolor" href="http://www.jd.com">前往京东商城</a>
+    </div>
+
+
+    <div class="box12">
+        <ul>
+            <li>1qwe</li>
+            <li>234</li>
+            <li>qweqw</li>
+            <li>fsdfa</li>
+        </ul>
+    </div>
+
+
+    <div class="box13">
+        <img src="images/Mask group6.png" alt="占位图">
+        <span>随便找的图片</span>
+    </div>
+    <div>
+        <img src="images/icon_jylc.png" alt="再来一个占位图">
+        <span>再随便找一个图</span>
+    </div>
+    <div class="box14">
+
+        <p>
+        <h4>第四级标题</h4><span>pppppppp</span>1231235555<span>pppppppp</span><span>pppppppp</span></p>
+        <p>tttttt</p>
+        <p>yyyyy</p>
+        <p>uuuu</p>
+        <p>iiiii</p>
+        <p>ooooo</p>
+    </div>
+    <div class="box15">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+    </div>
+    <div class="box16">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+    </div>
+    <div class="box17">
+        <p>1</p>
+        <p>2</p>
+        <h3>盒子17 的h3</h3>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <h3>盒子17 的h3</h3>
+        <p>6</p>
+        <p>7</p>
+    </div>
+    <div class="box18">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <h3>盒子18 的h3</h3>
+        <p>6</p>
+        <h3>盒子18 的h3</h3>
+        <p>7</p>
+    </div>
+    <div class="box19">
+        文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+    </div>
+    <div class="box20">
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para"></p>
+        <p class="para">123</p>
+        <p class="para"> </p>
+
+
+
+        <p><input type="text"><input type="text"><input type="text" disabled><input type="text" disabled></p>
+        <p><label style="width: 100%;height: 100%;padding: 5px;"><input type="checkbox"><span>学习</span></label> <input
+                type="checkbox"><span>学习</span> <input type="checkbox"><span>学习</span> <input type="checkbox">学习</p>
+    </div>
+</body>
+
+</html>
